@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  color: #333333; /* Valeur pour le mode clair */
+  background-color: #f5f5f5; /* Valeur pour le mode clair */
+  font-family: 'Verdana', sans-serif;
+}
+
+body.dark {
+  color: #ffffff; /* Valeur pour le mode sombre */
+  background-color: #282c34; /* Valeur pour le mode sombre */
+}
+
+
+@keyframes colorChange {
+  0%, 100% {
+    color: #008080;
+  }
+  50% {
+    color: white;
+  }
+}
+
+.color-change {
+  @apply animate-[colorChange_2s_infinite];
+}
+
+.h1 {
+  font-size: 38px;
+  text-align: center;
+  line-height: 1.1;
+  font-weight: 600;
+}
+.h2 {
+  font-size: 36px;
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+.h3 {
+  font-size: 20px;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+@media (min-width: 1280px) {
+  .h1 {
+    font-size: 48px;
+  }
+}
+.text-outline {
+  -webkit-text-stroke:1px #ffffff;
+}
+.text-outline-hover {
+  -webkit-text-stroke:1px #00ff99;
+}
+
+/* Animations */
+.sheet-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.sheet-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}
+
+.sheet-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sheet-exit-active {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 800ms ease-in-out, transform 800ms ease-in-out;
+}
+.btn-download {
+  @apply flex items-center space-x-2 px-4 py-2 rounded-lg transition-all;
+}
+
+.btn-download-light {
+  @apply bg-accent text-white;
+}
+
+.btn-download-light:hover {
+  background-color: #282c34; /* Couleur de survol pour le mode clair */
+}
+
+.btn-download-dark {
+  @apply bg-accent text-white;
+}
+
+body.dark .btn-download-dark:hover {
+  background-color: #1c1c22; /* Couleur de survol pour le mode sombre */
+}
+
+
+
