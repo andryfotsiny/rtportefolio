@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rtportefolio/static/css/main.c4244b9f.css",
+    "main.js": "/rtportefolio/static/js/main.3a594273.js",
+    "index.html": "/rtportefolio/index.html",
+    "main.c4244b9f.css.map": "/rtportefolio/static/css/main.c4244b9f.css.map",
+    "main.3a594273.js.map": "/rtportefolio/static/js/main.3a594273.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4244b9f.css",
+    "static/js/main.3a594273.js"
+  ]
+}
