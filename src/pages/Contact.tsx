@@ -176,7 +176,7 @@ const Contact: React.FC = () => {
           </div>
           <div className="w-full overflow-x-auto">
             <p className="text-xl font-semibold mb-2">Tableau</p>
-            <p className="mb-4">Liste des entreprises</p>
+            <p className="mb-4">Liste des entreprises qui me contactent </p>
             <table className=" bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
               <thead>
                 <tr className=" dark:bg-gray-900">
