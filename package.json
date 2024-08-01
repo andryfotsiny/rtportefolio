@@ -2,12 +2,11 @@
   "name": "rtportefolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://andryfotsiny.github.io/rtportefolio",
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-scroll-area": "^1.1.0",
     "@radix-ui/react-tabs": "^1.1.0",
-
+    "@supabase/supabase-js": "^2.45.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -32,9 +31,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

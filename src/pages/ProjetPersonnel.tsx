@@ -3,7 +3,7 @@ import { FaHtml5, FaCss3, FaJs, FaReact, FaVuejs, FaPhp } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { motion } from "framer-motion";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "../components/ui/Tabs";
-import { ScrollArea, ScrollBar } from "../components/ui/Scroll-area";
+import { ScrollArea} from "../components/ui/Scroll-area";
 
 const skills = [
   {
@@ -70,7 +70,7 @@ const ProjetPersonnel = () => {
               <TabsContent key={skill.id} value={skill.id} className="w-full">
                 <div className="flex flex-col gap-[5px] text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skill.title}</h3>
-                  <p className="max-w-[600px] mx-auto xl:mx-0">{skill.description}</p>
+                  <p className="">{skill.description}</p>
                   <ScrollArea className="h-[400px]">
                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                       {skill.items.map((item, index) => (

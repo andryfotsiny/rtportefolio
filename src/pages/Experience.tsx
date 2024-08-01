@@ -5,10 +5,15 @@ import React, { useState } from "react";
 import SwiperCore, { Swiper as SwiperType } from 'swiper';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import chuImage from '../assets/chu1.png';
+import conge from '../assets/conge.png';
+import sig from '../assets/sig.png';
+
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
 import { Link } from 'react-router-dom';
 import WorkSliderBtns from "../components/ui/WorkSliderBtns";
+import assert from "node:assert";
 
 const projects = [
     {
@@ -17,7 +22,7 @@ const projects = [
         date: 'juillet 2022(2 mois)',
         description: 'lorem',
         stack: [{ name: "html5 " }, { name: "Css 3" }, { name: "javascript" }],
-        image: '/assets/work/chu1.png',
+        image: chuImage,
         live: "",
         github: "",
     },
@@ -27,7 +32,7 @@ const projects = [
         date: 'mai 2021(3 mois) ',
         description: 'lorem',
         stack: [{ name: "Java " }, { name: "." }, { name: "javascript" }],
-        image: '/assets/work/conge.png',
+        image: conge,
         live: "",
         github: "",
     },
@@ -37,7 +42,7 @@ const projects = [
         date: 'octobre 2023(5 mois)',
         description: 'lorem',
         stack: [{ name: "React " }, { name: "taillwindCss" }, { name: "Python" }],
-        image: '/assets/work/sig.png',
+        image: sig,
         live: "",
         github: "",
     },
@@ -61,7 +66,7 @@ const Experience= () => {
                 <div className="flex flex-col md:flex-row md:gap-[30px] ">
                     <div className="w-full xl:w-[50%] md:h-[460px] flex flex-col md:justify-between order-2 md:order-none  ">
                         <div className="flex flex-col gap-1 h-[50%]">
-                            <div className="text-7xl leading-none font-extrabold text-transparent text-outline">
+                            <div className="text-7xl leading-none font-extrabold dark:text-transparent text-outline">
                                 {project.num}
                             </div>
                             <h2 className="text-[20px]  leading-none group-hover:text-accent transition-all duration-500 capitalize">

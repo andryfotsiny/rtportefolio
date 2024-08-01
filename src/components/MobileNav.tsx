@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "../components/ui/Sheet";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
+import { FaHome, FaBook, FaBriefcase, FaProjectDiagram, FaStar, FaEnvelope } from 'react-icons/fa';
 import { Link, useLocation } from "react-router-dom";
 import '../styles/global.css';
 
@@ -11,15 +12,16 @@ import '../styles/global.css';
 interface LinkItem {
     name: string;
     path: string;
+    icon: JSX.Element;
 }
 
 const links: LinkItem[] = [
-     { name: "home", path: "/" },
-  { name: "formation", path: "/formation" },
-  { name: "expérience", path: "/experience" },
-  { name: "projetPersonnel", path: "/projetPersonnel" },
-  { name: "compétences", path: "/competences" },
-  { name: "contact", path: "/contact" }
+  { name: "home", path: "/", icon: <FaHome /> },
+  { name: "formation", path: "/formation", icon: <FaBook /> },
+  { name: "expérience", path: "/experience", icon: <FaBriefcase /> },
+  { name: "projetPersonnel", path: "/projetPersonnel", icon: <FaProjectDiagram /> },
+  { name: "compétences", path: "/competences", icon: <FaStar /> },
+  { name: "contact", path: "/contact", icon: <FaEnvelope /> }
 ];
 
 const MobileNav: React.FC = () => {
@@ -43,14 +45,14 @@ const MobileNav: React.FC = () => {
                     isOpen ? 'sheet-enter-active' : 'sheet-exit-active'
                 }`}
             >
-                <div className="mt-32 mb-40 text-center text-2xl">
+                <div className="mt-10 mb-20 text-center text-2xl">
                     <Link to="/">
                         <h1 className="text-4xl font-semibold">
                             Logo<span className="text-accent">.</span>
                         </h1>
                     </Link>
                 </div>
-                <nav className="flex flex-col justify-center items-center gap-8">
+                <nav className="flex flex-col justify-center gap-5">
                     {links.map((link, index) => (
                         <Link
                             to={link.path}
@@ -59,8 +61,9 @@ const MobileNav: React.FC = () => {
                             className={`${
                                 link.path === location.pathname &&
                                 "text-accent border-b-2 border-accent"
-                            } text-xl capitalize hover:text-accent transition-all`}
+                            } text-xl capitalize hover:text-accent transition-all flex items-center gap-2`}
                         >
+                            {link.icon}
                             {link.name}
                         </Link>
                     ))}

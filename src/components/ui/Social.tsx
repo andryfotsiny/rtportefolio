@@ -8,9 +8,9 @@ interface SocialProps {
 }
 
 const socials = [
-  { icon: <FaGithub />, path: "https://github.com" },
-  { icon: <FaLinkedin />, path: "https://linkedin.com" },
-  { icon: <FaFacebook />, path: "https://facebook.com" },
+  { icon: <FaGithub />, path: "https://github.com/andryfotsiny" },
+  { icon: <FaLinkedin />, path: "https://www.linkedin.com/in/jean-michel-andrianantenaina-483056304/" },
+  { icon: <FaFacebook />, path: "https://web.facebook.com/andry.fotsiny.98" },
 ];
 
 const Social: React.FC<SocialProps> = ({ containerStyles, iconStyles }) => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import photo from '../../assets/photo.png';
 const Photo: React.FC = () => {
   return (
     <div className="w-full h-full relative">
@@ -14,7 +14,7 @@ const Photo: React.FC = () => {
           className="w-[208px] h-[208px] xl:w-[498px] xl:h-[408px]"
         >
           <img
-            src="/assets/photo.png"
+            src={photo}
             alt="Photo"
             className="object-contain xl:items-center w-full h-full"
           />

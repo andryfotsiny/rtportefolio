@@ -2,14 +2,16 @@ import { FiDownload } from "react-icons/fi";
 import Stats from "../components/ui/Stats";
 import Social from "../components/ui/Social";
 import Photo from "../components/ui/Photo";
+import andrycv from "../assets/andrycv.pdf";
+
 import { useState, useEffect } from "react";
 
 // xl:pt-8 xl:pb-24
 // container mx-auto h-full
 const handleDownload = () => {
   // Créez un lien temporaire pour télécharger le fichier
-  const link = document.createElement("a");
-  link.href = "/assets/andrycv.pdf"; // Chemin vers le fichier dans le dossier public
+const link = document.createElement('a');
+    link.href = andrycv;
   link.download = "andrycv.pdf"; // Nom du fichier lors du téléchargement
   document.body.appendChild(link);
   link.click();

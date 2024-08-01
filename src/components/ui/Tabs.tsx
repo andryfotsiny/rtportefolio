@@ -36,10 +36,10 @@ const TabsTrigger = React.forwardRef<HTMLButtonElement, TabsTriggerProps>(({ cla
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
-      "inline-flex items-center w-full  dark:bg-[#27272c] bg-white  text-gray-950 dark:text-white justify-center " +
-        "whitespace-nowrap text-white rounded-lg p-3 text-balance font-medium " +
+      "inline-flex items-center w-full  text-black bg-white dark:bg-[#27272c]  dark:text-white justify-center " +
+        "whitespace-nowrap  rounded-lg p-3 text-balance font-medium " +
         "ring-offset-white transition-all disable-pointer-events-none disable:opacity-50 " +
-        "data-[state=active]:bg-accent data-[state=active]:text-primary " +
+        "data-[state=active]:bg-accent dark:data-[state=active]:bg-accent data-[state=active]:text-primary " +
         "data-[state=active]:font-bold data-[state=active]:shadow-sm",
       className
     )}
