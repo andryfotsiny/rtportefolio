@@ -28,3 +28,7 @@ Il fournit également des informations de contact essentielles et une interface 
 - **Supprimer une entreprise** : Cliquez sur le bouton de suppression pour retirer une entreprise de la liste.
 - **Filtrage par compétences** : Sélectionnez des compétences spécifiques à l'aide de cases à cocher.
 - **Affichage des informations de contact** : Affiche les informations de contact comme le téléphone, l'email et l'adresse.
+
+# supabase client
+rtportefolio\src\utils\supabaseClient.ts
+
