@@ -25,7 +25,7 @@ const Header: React.FC = () => {
                     onClick={() => setDarkMode(!darkMode)}
                     className="ml-4 px-3 py-2 border-2 border-gray-700 dark:border-gray-200 rounded-lg font-bold text-gray-700 dark:text-gray-200 transition-colors duration-300"
                 >
-                    {darkMode ? <FaSun className="text-2xl" /> : <FaMoon className="text-2xl" />}
+                    {darkMode ? <FaSun className="" /> : <FaMoon className="" />}
                 </button>
 
                 <div className="md:hidden items-end">
